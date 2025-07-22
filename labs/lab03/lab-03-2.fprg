@@ -13,7 +13,7 @@
         <body>
             <declare name="NUMNIGHT" type="Integer" array="False" size=""/>
             <input variable="NUMNIGHT"/>
-            <declare name="totalpayment" type="Real" array="False" size=""/>
+            <declare name="TOTALPAYMENT" type="Real" array="False" size=""/>
             <assign variable="TOTALPAYMENT" expression="(NUMNIGHT * 250.00) + (250.00 * 0.15)"/>
             <output expression="TOTALPAYMENT" newline="True"/>
         </body>
