@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="lab-03-5"/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-07-22 12:34:34 PM"/>
+        <attribute name="created" value="dXNlcjtLTUxMQUI3LVBDMjQ7MjAyNS0wNy0yMjsxMjoyODo0MSBQTTsyNTEz"/>
+        <attribute name="edited" value="dXNlcjtLTUxMQUI3LVBDMjQ7MjAyNS0wNy0yMjsxMjozNDozNCBQTTsyOzI2MjE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="packseaten" type="Real" array="False" size=""/>
+            <input variable="packseaten"/>
+            <declare name="servingsconsumed" type="Real" array="False" size=""/>
+            <assign variable="servingsconsumed" expression="packseaten * 10"/>
+            <declare name="totalcalories" type="Real" array="False" size=""/>
+            <assign variable="totalcalories" expression="servingsconsumed * 300"/>
+            <output expression="totalcalories" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
