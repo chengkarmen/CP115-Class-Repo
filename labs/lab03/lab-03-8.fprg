@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="lab-03-8"/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-07-22 01:09:02 PM"/>
+        <attribute name="created" value="dXNlcjtLTUxMQUI3LVBDMjQ7MjAyNS0wNy0yMjsxMjo1OTowMiBQTTsyNTE0"/>
+        <attribute name="edited" value="dXNlcjtLTUxMQUI3LVBDMjQ7MjAyNS0wNy0yMjswMTowOTowMiBQTTsxOzI2MTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="principle" type="Real" array="False" size=""/>
+            <declare name="rate" type="Real" array="False" size=""/>
+            <declare name="time" type="Real" array="False" size=""/>
+            <input variable="principle"/>
+            <input variable="rate"/>
+            <input variable="time"/>
+            <declare name="interest" type="Real" array="False" size=""/>
+            <assign variable="interest" expression="principle * rate * time"/>
+            <declare name="totalAmount" type="Real" array="False" size=""/>
+            <assign variable="totalAmount" expression="principle + interest"/>
+            <declare name="monthlyInterest" type="Integer" array="False" size=""/>
+            <assign variable="monthlyInterest" expression="interest/(time * 12)"/>
+            <output expression="interest" newline="True"/>
+            <output expression="totalAmount" newline="True"/>
+            <output expression="monthlyInterest" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
