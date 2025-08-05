@@ -1,6 +1,6 @@
 student_name = input("Enter your name: ")
 course_name = input("Enter the course name: ")
-age = int("Enter your age: ")
+age = int(input("Enter your age: "))
 print("Student: " + student_name)
 print("Course: " + course_name)
-print("Age: " + age)
+print("Age: " + int(age))
