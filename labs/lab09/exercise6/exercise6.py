@@ -20,7 +20,7 @@ if (overtime_hours <= 8):
 else:
     base_rate = 2.0
 hour_rate_bonus = 0
-if (is_weekend:True):
+if (is_weekend == "Yes"):
     hour_rate_bonus = 5
 
 overtime_pay = overtime_hours * overtime_rate
