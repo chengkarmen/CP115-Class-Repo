@@ -3,17 +3,21 @@ previous_reading = int(input())
 
 # TODO: Your code here
 
-consumption = float(current_reading + previous_reading)
+consumption = current_reading - previous_reading
+rate = 0
 water_cost = 0
 if (consumption <= 20):
-    water_cost = consumption * 0.57
+    rate = 0.57
+    water_cost = consumption * rate
 elif (consumption <= 35):
-    water_cost = 11.4 + ((consumption - 20) * 1.03)
+    rate = 1.03
+    water_cost = 11.4 + ((consumption - 20) * rate)
 else:
-    water_cost = 11.4 + 15.45 + ((consumption -35) * 1.4)
+    rate = 1.4
+    water_cost = 11.4 + 15.45 + ((consumption - 35) * rate)
 
-# add service charge and sewerage
-total_bill = water_cost + 8 + 2
+additional_charges = 8 + 2
+total_bill = water_cost + additional_charges
 
 print(consumption)
 print(water_cost)
