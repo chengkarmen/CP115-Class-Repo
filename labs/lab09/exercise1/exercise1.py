@@ -7,13 +7,12 @@ credit_hours = int(input("Enter credit hours: "))
 # TODO your code here
 classification = ""
 
-if (credit_hours < 12):
-    classification = "Part-time Students"
-elif (gpa >= 3.8) and (credit_hours >= 12):
+
+if (gpa >= 3.8) and (credit_hours >= 12):
     classification = "Dean's List"
 elif (gpa >= 3.5) and (credit_hours >= 12):
     classification = "Honor Roll"
-elif (gpa > 2.0):
+elif (gpa >= 2.0):
     classification = "Good Standing"
 elif (gpa < 2.0):
     classification = "Academic Probation"
