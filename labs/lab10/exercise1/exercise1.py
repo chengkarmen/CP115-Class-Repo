@@ -6,4 +6,4 @@ is_weekend = input()
 
 print(hourly_rate)
 print(overtime_pay)
-print(total_pay)
+print(total_pay) 
