@@ -4,7 +4,6 @@ accident_count = int(input())
 # Your code here
 
 base_premium = 0
-
 if (age < 25):
     base_premium = 2400
 elif (age <=50):
@@ -23,9 +22,9 @@ else:
 premium = base_premium + accident_penalty
 discount_amount = 0
 if (accident_count == 0):
-    discount_amount = premium * 0.1
+    discount_amount = int(premium * 0.1)
 
-final_premium = premium - discount_amount
+final_premium = int(premium - discount_amount)
 
 print(base_premium)
 print(final_premium)
