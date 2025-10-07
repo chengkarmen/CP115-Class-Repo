@@ -20,14 +20,13 @@ if overtime_hours <= 8:
     overtime_pay = overtime_hours * overtime_rate
 else:
     overtime_rate = hourly_rate * 2.0
-    overtime_pay = overtime_hours * overtime_rate
+    overtime_pay = (hourly_rate * 1.5 * 8) + ((overtime_hours - 8) * overtime_rate)
 
 # Add weekend bonus if applicable
 if is_weekend.lower() == "yes":
     weekend_bonus = overtime_hours * 5
     overtime_pay += weekend_bonus
     
-# Total pay is same as overtime pay
-total_pay = overtime_pay
+# (8 * 20 * 1.5) + (2 * 20 * 2.0) = 240 + 80 = 320
 
 print(overtime_pay)
